@@ -322,7 +322,9 @@
             const url = window.location.host;
             const tsParticlesConfig = `${protocol}//${url}/me/src/particles.json`;
 
+
             await loadFull(tsParticles);
+
             $("#tsparticles")
                 .particles()
                 .ajax(tsParticlesConfig, function (container) {
