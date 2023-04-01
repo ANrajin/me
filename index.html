@@ -309,28 +309,7 @@
         </div>
         </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
-
-    <script>
-        $(document).ready(async function () {
-            const protocol = window.location.protocol;
-            const url = window.location.host;
-            const tsParticlesConfig = `${protocol}//${url}/me/src/particles.json`;
-
-
-            await loadFull(tsParticles);
-
-            $("#tsparticles")
-                .particles()
-                .ajax(tsParticlesConfig, function (container) {
-                });
-        });
-    </script>
+    <script src="./dist/particles.bundle.js"></script>
 </body>
 
 </html>
