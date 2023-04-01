@@ -320,13 +320,12 @@
         $(document).ready(async function () {
             const protocol = window.location.protocol;
             const url = window.location.host;
-
-            const baseUrl = `${protocol}//${url}`;
+            const tsParticlesConfig = `${protocol}//${url}/me/src/particles.json`;
 
             await loadFull(tsParticles);
             $("#tsparticles")
                 .particles()
-                .ajax(`${baseUrl}/src/particles.json`, function (container) {
+                .ajax(tsParticlesConfig, function (container) {
                 });
         });
     </script>
